@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+     <script>
+    function somar(x, y) {
+        return x + y;
+    }
+
+    function subtrair(x, y) {
+        return x - y;
+    }
+
+    function multiplicar(x, y) {
+        return x * y;
+    }
+
+    function dividir(x, y) {
+        return x / y;
+    }
+
+    function exponencial(x, y) {
+        return x ** y;
+    }
+
+    const executar = () => {
+        const a = Number(document.getElementById("value1").value);
+        const b = Number(document.getElementById("value2").value);
+        let oper = document.getElementById("oper").selectedIndex;
+        let resultado = 0;
+
+        if (oper == 0) resultado = somar(a, b);
+        else if (oper == 1) resultado = subtrair(a, b);
+        else if (oper == 2) resultado = multiplicar(a, b);
+        else if (oper == 3) resultado = dividir(a, b);
+        else if (oper == 4) resultado = exponencial(a, b);
+
+        document.getElementById("resp").innerHTML = `${resultado}`;
+    }
+</script>
+    <header>
+       <h1>Calculadora</h1>
+    </header>
+    <form class="form-calculadora">
+        <label for="form" class="form-caixa">Valor 1</label>
+        <input type="number" class="caixa-numerica" placeholder="Digite aqui" id="value1">
+
+        <label for="form" class="form-caixa">Valor 2</label>
+        <input type="number" class="caixa-numerica" placeholder="Digite aqui" id="value2">
+
+        <select  id="oper" class="selecionar-caixa">
+            <option>Soma</option>
+            <option>Subtração</option>
+            <option>Multiplicação</option>
+            <option>Divisão</option>
+            <option>Potenciação</option>
+        </select>
+
+        <a href="#" onclick="executar()">Executar</a>
+
+     <div class="resp-calculadora" id="resp">Resposta:</div>
+       
+    </form>
+
+   
+
+    
+</body>
+</html>

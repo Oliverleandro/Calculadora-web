@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primaria: #4f46e5;
+    --segundaria: #7c3aed;
+    --escuro: #0f172a;
+    --maisEscuro: #0a0f1c;
+    --claro: #e2e8f0;
+    --vidro: rgba(255, 255; 255, 0.1);
+}
+
+body {
+    background-color: var(--escuro);
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--escuro)
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    background-color: var(--escuro);
+    display: flex;
+    justify-content: center;
+    color: white;
+    box-shadow:10px 10px 70px 9px rgba(69,69,153,1);
+    border-radius: 30px;
+    width: 500px;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.form-calculadora {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 50px auto;
+    box-shadow:10px 10px 80px 9px rgba(69,69,153,1);
+    border-radius: 30px;
+    width: 500px;
+
+}
+
+ .form-caixa{
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    margin-top: 8px;
+    justify-content: center;
+    
+}
+
+.caixa-numerica{
+    margin: 30px auto;
+    padding: 10px;
+    background: var(--escuro);
+    border-radius: 8px;
+    color: white;
+}
+
+.selecionar-caixa{
+    margin: 30px auto;
+    padding: 10px;
+    background: var(--escuro);
+    color: white;
+    border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background: var(--escuro);
+    width: 90px;
+    height: 50px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover {
+     background: var(--primaria);
+     box-shadow:10px 10px 50px 9px rgba(69,69,153,1);
+
+}
+
+.resp-calculadora{
+    background: var(--primaria);
+    width: 90px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow:10px 10px 50px 9px rgba(69,69,153,1);
+}
+
